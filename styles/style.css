@@ -32,12 +32,19 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--neutral-white);
+  background-color: var(--neutral-grey-950);
 }
 .article {
   background-color: var(--neutral-grey-900);
+  background: linear-gradient(
+    to top,
+    hsl(210, 18%, 13%),
+    var(--neutral-grey-900)
+  );
+
   width: 450px;
   height: 450px;
-  border-radius: 40px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   padding: 40px;
