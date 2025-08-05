@@ -5,14 +5,13 @@ const $responseCount = document.querySelector('.response-count');
 
 $form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const $checkBoxes = document.querySelectorAll(
-    'input[type="checkbox"]:checked'
-  );
-  const total = $checkBoxes.length;
+  const $radioChecked = document.querySelector('input[type="radio"]:checked');
+  console.log($radioChecked);
+  if (!$radioChecked) return alert('Please select at least one option!');
 
-  if (total === 0) return alert('Please select at least one option!');
+  const rating = $radioChecked.value;
 
   $ratingContainer.style.display = 'none';
-  $responseCount.textContent = `You selected ${total} out of 5`;
+  $responseCount.textContent = `You selected ${rating} out of 5`;
   $responseContainer.style.display = 'flex';
 });
