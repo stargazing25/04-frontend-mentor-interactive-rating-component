@@ -98,9 +98,9 @@ body {
   justify-content: space-between;
   margin-bottom: 15px;
 }
-/* input[type='radio'] {
+input[type='radio'] {
   display: none;
-} */
+}
 label {
   background-color: hsl(211, 18%, 25%);
   /* padding: 30px 20px; */
@@ -157,4 +157,30 @@ input[type='radio']:checked + label {
   margin: 0;
   text-align: center;
   line-height: 1.5;
+}
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 15px 20px 10px 20px;
+  background-color: var(--primary-color-orange-500);
+  color: var(--neutral-grey-950);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+.back-button:hover {
+  background-color: var(--neutral-white);
+  cursor: pointer;
 }
