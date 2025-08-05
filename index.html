@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="public/images/favicon-32x32.png" type="image/png" />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <article
+        class="article rating-container animate__animated animate__fadeIn"
+      >
+        <img class="rating-image" src="public/images/icon-star.svg" alt="" />
+        <h1 class="rating-title">How did we do?</h1>
+        <p class="rating-info">
+          Please let us know how we did with your support request. All feedback
+          isappreciated to help us improve our offering!
+        </p>
+        <form class="rating-options-form" id="rating-options-form">
+          <input type="checkbox" name="rating" id="rate1" value="1" />
+          <label for="rate1">1</label>
+          <input type="checkbox" name="rating" id="rate2" value="2" />
+          <label for="rate2">2</label>
+          <input type="checkbox" name="rating" id="rate3" value="3" />
+          <label for="rate3">3</label>
+          <input type="checkbox" name="rating" id="rate4" value="4" />
+          <label for="rate4">4</label>
+          <input type="checkbox" name="rating" id="rate5" value="5" />
+          <label for="rate5">5</label>
+        </form>
+        <button class="rating-button" type="submit" form="rating-options-form">
+          Submit
+        </button>
+      </article>
+      <article
+        class="article response-container animate__animated animate__fadeIn"
+      >
+        <img
+          class="response-image"
+          src="public/images/illustration-thank-you.svg"
+          alt="phone with paper and card"
+        />
+        <p class="response-count">You selected <> out of 5</p>
+        <p class="response-thanks">Thank you!</p>
+        <div class="response-messages">
+          <p class="response-message-item">
+            We appreciate you taking the time to give a rating.
+          </p>
+          <p class="response-message-item">
+            If you ever need more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
